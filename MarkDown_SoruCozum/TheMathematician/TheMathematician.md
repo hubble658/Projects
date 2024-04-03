@@ -107,7 +107,9 @@ Amacımız bu iki noktayı uygun şekilde hareket ettirerek istenen eğime ulaş
 ##### İzlememiz gereken adımlar:
 
 1 -  Elimizdeki eğim istenen eğimin değerinden küçükse **sol noktayı** bir birim **sağa** kaydır. (Eğim arttı)
+
 2 - Elimizdeki eğim istenen eğimden büyükse **sağ noktayı** bir birim **sola** kaydır. (Eğim azaldı)
+
 3 - Eğim eşitse **sayacı arttır** ve denge durumunu bozmak için sol tarafı bir birim sağa(ya da sağı sola) kaydır.
 
 
