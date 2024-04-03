@@ -128,4 +128,4 @@ while l<r:
 print(count)
 ```
 
-Yukarı da python ile yazılan kodda nasıl implemente edileceğini görebiliriz. Bu kodu test ettiğimizde ise  başarılı bir şekilde geçbiliyoruz.
+Yukarı da python ile yazılan kodda nasıl implemente edileceğini görebiliriz. Sayacı artırarak sonucu buluyoruz ve son olarak yazdırıyoruz. Bu kodu test ettiğimizde ise  başarılı bir şekilde geçebiliyoruz.
