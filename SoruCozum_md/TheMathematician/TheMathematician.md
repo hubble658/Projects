@@ -7,7 +7,7 @@
 
 <img src="images/input.png" alt="image" width="auto" height="auto">----
 
-Bir fonksiyon f(x) ile ilgili bilgiler verilmektedir: __f(x), f'(x) ve f''(x)__ değerleri her zaman pozitif olacak şekilde. İki farklı x değeri seçerek oluşturduğumuz herhangi bir doğru segmentinin eğimi, belirli bir değerle eşit olma durumunu inceliyoruz. Bu koşullar altında, seçilen iki nokta arasındaki doğru segmentinin eğimi, verilen hedef eğime kaç farklı şekilde eşit olabilir?
+Bir fonksiyon $f(x)$ ile ilgili bilgiler verilmektedir: $\ f(x), f'(x) ve f''(x) $ değerleri her zaman pozitif olacak şekilde. İki farklı x değeri seçerek oluşturduğumuz herhangi bir doğru segmentinin eğimi, belirli bir değerle eşit olma durumunu inceliyoruz. Bu koşullar altında, seçilen iki nokta arasındaki doğru segmentinin eğimi, verilen hedef eğime kaç farklı şekilde eşit olabilir?
 
 
 >4 5
@@ -15,8 +15,8 @@ Bir fonksiyon f(x) ile ilgili bilgiler verilmektedir: __f(x), f'(x) ve f''(x)__ 
 
 Birinci satırda ilk sayı kaç nokta olduğunu ,ikinci sayı ise istenen eğimi gösteriyor. İkinci satır ise fonksiyonun y değerlerini gösteriyor.
 
-m = 5
-| x | y |
+$m$ = 5
+| $x$ | $y$ |
 | ---- | --- |
 | 1 | 1 |
 | 2 | 4 |
@@ -32,7 +32,7 @@ m = 5
 
 #### Deneme 1
 
-Soruyu görünce aklımıza ilk olarak her ikili noktayı degerlendirip eğimi __m__ e eşit olanları saymak gelmiş olabilir. Ama bu yöntem süre kısıtlamasından dolayı testi geçemiyor.
+Soruyu görünce aklımıza ilk olarak her ikili noktayı degerlendirip eğimi $m$ e eşit olanları saymak gelmiş olabilir. Ama bu yöntem süre kısıtlamasından dolayı testi geçemiyor.
 
 Girdileri alma:
 ```python
