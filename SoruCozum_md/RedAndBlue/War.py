@@ -1,4 +1,3 @@
-
 n = int(input())
 m = int(input())
 
@@ -8,15 +7,15 @@ StrenghtOfCanon = list(map(int,input().split()))
 
 impOfCastle= [x for _,x in sorted(zip(StrenghtOfCastle,impOfCastle))]
 StrenghtOfCastle.sort()
+
 sum=0
 
-print(StrenghtOfCastle)
-print(impOfCastle)
+castle = {}
 
-for i in range(1,n):
-    if impOfCastle[i]<impOfCastle[i-1]:
-        impOfCastle[i] =impOfCastle[i-1]
-
+for i in range(n):
+    #print(impOfCastle[i],StrenghtOfCastle[i])
+    if impOfCastle[i]>castle.get(StrenghtOfCastle[i],-1):
+        castle.update({StrenghtOfCastle[i]:impOfCastle[i]})
 for i in range(m):
 
     tmp = StrenghtOfCanon[i]
@@ -28,10 +27,9 @@ for i in range(m):
             low = mid+1
         else:
             high=mid
-    if(tmp<StrenghtOfCastle[low] and low!=0):
-        low=low-1
+    if(tmp<StrenghtOfCastle[mid] and mid!=0):
+        mid=mid-1
 
-    sum+= impOfCastle[low]
+    sum+= castle.get(StrenghtOfCastle[mid],-1)
 
 print(sum)
-    
