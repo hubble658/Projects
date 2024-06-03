@@ -53,11 +53,11 @@ typedef struct MT
     int column;
 }Matris;
 
-// Fonksiyonlar deger dondurmedigi icin int olmaları sikinti degil
-int Bisection(),Trapez(),Gregory_Newton(); 
-int Regula_Falsi(),Newton_Raphson(),Inverse_Matrix();
-int Gauss_Elimination(),Gauss_Seidal(),Numeric_Deriv(),Simpson();
-int PrintMatris(Matris p);
+// Fonksiyonlar deger dondurmuyor
+void Bisection(),Trapez(),Gregory_Newton(); 
+void Regula_Falsi(),Newton_Raphson(),Inverse_Matrix();
+void Gauss_Elimination(),Gauss_Seidal(),Numeric_Deriv(),Simpson();
+void PrintMatris(Matris p);
 Matris createIdentityMatrix(int n);
 
 //Hesap yapiyor bundan dolayi double
@@ -414,7 +414,7 @@ int main() {
     return 0;
 }
 
-int Bisection(){
+void Bisection(){
 
     char inputFunc[100];
     char inputNumber[20];
@@ -498,7 +498,7 @@ int Bisection(){
   
     return 0;
 }
-int Regula_Falsi(){
+void Regula_Falsi(){
     
     char inputFunc[100];
     char inputNumber[20];
@@ -587,7 +587,7 @@ int Regula_Falsi(){
 
     return 0;
 }
-int Newton_Raphson(){
+void Newton_Raphson(){
 
     
     char inputFunc[100];
@@ -657,7 +657,7 @@ int Newton_Raphson(){
 
     return 0;
 }
-int Inverse_Matrix(){
+void Inverse_Matrix(){
 
     int N,i,j,k;
     double divider,subtract,temp;
@@ -773,7 +773,7 @@ Matris createIdentityMatrix(int n) {
     return I;
 }
 
-int PrintMatris(Matris m1){
+void PrintMatris(Matris m1){
 
     int i,j;
     for (i = 0; i < m1.row; i++)
@@ -787,7 +787,7 @@ int PrintMatris(Matris m1){
     }
     return 0;
 }
-int Gauss_Elimination(){
+void Gauss_Elimination(){
 
     int N,i,j,k;
     double divider,subtract,ratio,sum,temp;
@@ -884,7 +884,7 @@ int Gauss_Elimination(){
     return 0;
 
 }
-int Gauss_Seidal(){
+void Gauss_Seidal(){
 
     int N,i,j,k,max,iter,maxIter;
     double num,temp,error,currenError;
@@ -1005,7 +1005,7 @@ int Gauss_Seidal(){
     free(matris.data);
     return 0;
 }
-int Numeric_Deriv(){
+void Numeric_Deriv(){
 
     char inputFunc[100];
     char inputNumber[20];
@@ -1067,7 +1067,7 @@ double forwardDerivative(char* input,double x,double h){
 double backwardDerivative(char* input,double x,double h){ 
     return (funcEvaluate(input,x)-funcEvaluate(input,x-h))/(h);
 }
-int  Simpson(){
+void  Simpson(){
 
     char inputFunc[100];
     char inputNumber[20]; //Sayilari aldigimiz degisken
@@ -1151,7 +1151,7 @@ int  Simpson(){
 
     return 0;
 }
-int Trapez(){
+void Trapez(){
 
     char inputFunc[100];
     char inputNumber[20];
@@ -1228,7 +1228,7 @@ int Trapez(){
 
     return 0;
 }
-int Gregory_Newton(){
+void Gregory_Newton(){
 
     double varX,varX2,result;
     double** table;

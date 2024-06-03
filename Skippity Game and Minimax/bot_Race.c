@@ -88,23 +88,6 @@ stackNode* push(stackNode* head, Table* table)
     return newNode;
 }
 
-stackNode* pop(stackNode* head)
-{ // yeni head i döndürür
-
-    if (head == NULL)
-    {
-        printf("Stack is empty\n");
-        return NULL;
-    }
-
-    stackNode* newNode = head;
-    freeTable(newNode->data);
-    free(newNode);
-
-    head = head->next;
-    return head;
-}
-
 void freeStack(stackNode* top) {
     stackNode* temp;
     while (top->next != NULL) {
@@ -246,7 +229,7 @@ void printPlayer(Table* gt)
 void printTable(Table* table)
 {
 
-    system("cls"); /// DEGERLER TABLODA YANlış görüğbntoğiyrj
+    system("cls");
     int i, j;
     if (table->N < 10)
     {

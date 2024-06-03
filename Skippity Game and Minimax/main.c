@@ -8,7 +8,7 @@
 #include <crtdbg.h>
 
 
-//LİNK :   https://www.youtube.com/watch?v=K8C66y9ocOU
+//LİNK :   https://www.youtube.com/watch?v=EAT5o7RRsgk
 
 //Video da süre yetmedigi icin bazı kısımları hızlandırdım ve kestim. Youtube dan siz de videoyu hızlandırabilirisiniz.
 //Mikrofon bazen sesi almadigi icin kesik kesik gelmis kusura bakmayin.
@@ -26,7 +26,7 @@
 #define COLOR_WHITE "\033[1;37m"
 #define COLOR_RESET "\033[1;0m"
 
-#define MAX_DEPTH 10 // Hamle aramasi yaparken kac hamle ilerisine bakabilir
+#define MAX_DEPTH 4 // Hamle aramasi yaparken kac hamle ilerisine bakabilir
 
 
 typedef struct P
@@ -53,7 +53,6 @@ typedef struct node // Stack structı
     struct node* next;
 } stackNode;
 
-stackNode* pop(stackNode* head);
 stackNode* push(stackNode* head, Table* table);
 
 void freeTable(Table* a);
@@ -922,6 +921,8 @@ int main()
 
     // _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);   //Memory Leak bulmak icin
     // _CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_DEBUG);
+    printf("\e[?25l"); // Hide cursor
+    // printf("\e[?25h"); // Enable cursor
 
     int i, j, N, start, eaten, undo;
     int x, y;
@@ -943,20 +944,20 @@ int main()
 
     printf("Welcome To Skippity Game \nby Habil\n\n");
     printf("Rules:\n");
-    printf("1-There are 2 mode for game (2 Player or 1 Player).\n");
+    printf("1-There are 2 modes for game (2 Player or 1 Player).\n");
     printf("2-If it's your turn, choose a starting point x,y. (Example: 5 8)\n");
-    printf("3-After you choose starting point, you can move with W A S D.\n");
-    printf("5-You are allowed to use a skipper to make multiple jumps.\n");
-    printf("6-You can undo your last move by enterin 0.\n");
-    printf("7-You can pass your turn by enterin 1.\n");
-    printf("8-The game continues until there are no moves left.\n");
+    printf("3-After you choose a starting point, you can move with W A S D.\n");
+    printf("4-You are allowed to use a skipper to make multiple jumps.\n");
+    printf("5-You can undo your last move by enterin 0.\n");
+    printf("6-You can pass your turn by entering 1.\n");
+    printf("7-The game continues until there are no moves left.\n");
 
     printf("--------------------\n");
     printf("Scoring:\n");
     printf("1-The player who has the most complete sets of skippers wins the game\n");
-    printf("1.1-A complete set includes one of each color skipper.\n");
-    printf("2-If there is a tie, the player who has the most total skippers wins.\n");
-    printf("3-If there is still a tie at this point, the game ends in a tie.\n");
+    printf("2-A complete set includes one of each skippers.\n");
+    printf("3-If there is a tie, the player who has the most total skippers wins.\n");
+    printf("4-If there is still a tie at this point, the game ends in a tie.\n");
 
     while (Program == 1)
     {
