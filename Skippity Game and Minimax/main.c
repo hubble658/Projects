@@ -4,8 +4,8 @@
 #include <time.h> 
 #include <math.h>
 
-#define _CRTDBG_MAP_ALLOC //Memoryleak test etmek icindir. Memory Leak bulunmamaktadır.
-#include <crtdbg.h>
+//#define _CRTDBG_MAP_ALLOC //Memoryleak test etmek icindir. Memory Leak bulunmamaktadır.
+//#include <crtdbg.h>
 
 
 //LİNK :   https://www.youtube.com/watch?v=EAT5o7RRsgk
