@@ -1,6 +1,6 @@
 # Projects Repository
 
-This repository contains a collection of programming projects written in C , showcasing various algorithms, numerical methods, and game simulations.
+This repository contains a collection of programming projects written in C such as numerical methods, and game simulations.
 
 ## Projects Overview
 
