@@ -1,6 +1,6 @@
 Simple tetris game
 
-It was my first C project at university. A nice little project for an introduction to the C language.
+It was my first project at university. A nice little project for an introduction to the C language.
 
 <img src="s1.png" alt="Start Screen" width="800"/><br />
 
