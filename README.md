@@ -1,5 +1,5 @@
 # Projects Repository
-This repository contains a collection of programming projects written in C , showcasing various algorithms, numerical methods and game simulations.
+This repository contains a collection of programming projects for University.
 
 ## Projects Overview
 
@@ -7,11 +7,7 @@ This repository contains a collection of programming projects written in C , sho
 - Focuses on numerical methods and parsing.
 - Implements mathematical problem-solving techniques through algorithms.
 
-### 2. Skippity Game and Minimax Algorithm
-- A simulation of the Skippity game.
-- Uses the Minimax algorithm, commonly applied in game theory and AI.
 
-### 3. Neural Net and Optimization Algorithms
-- Implemented a neural network in C.
-- Trained on the MNIST dataset, achieving approximately 90% accuracy.
-- Evaluated three optimization algorithms: Adam, Gradient Descent, and Stochastic Gradient Descent.
+### 2. Tetris Game Implementation in C
+- This project is our first university assignment aimed at learning C programming. 
+- We implemented the classic Tetris game to practice key programming concepts.
